@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+
+<body>
+    <div>
+        <!--formulario-->
+        <h4>Formulario</h4>
+        <!--post info oculta, get info en url-->
+        <form method="POST">
+            <!--etiqueta-->
+            <label for="nombre">Nombre:</label> &nbsp;&nbsp;&nbsp;
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <input type="text" id="apellido" name="apellido">
+            <label for="apellido">Apellido:</label>
+            <br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña">
+            <br>
+            <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <!--opciones unicas, mismo name-->
+            <input type="radio" id="masc" name="sexo">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="sexo">
+            <label for="fem">Femenino</label>
+            <br>
+            <label for="pnd">Prefiero no decir</label>
+            <input type="radio" id="pnd" name="sexo">
+            <br>
+            <!--opciones multiples deschequeables, se agrega value-->
+            <label for="verano">Verano</label>
+            <input type="checkbox" id="verano" name="estacion" value="verano">
+            <label for="otoño">Otoño</label>
+            <input type="checkbox" id="otoño" name="estacion" value="otoño">
+            <label for="invierno">Invierno</label>
+            <input type="checkbox" id="invierno" name="estacion" value="invierno">
+            <label for="primavera">Primavera</label>
+            <input type="checkbox" id="primavera" name="estacion" value="primavera">
+            <br>
+            <!--opciones unicas, mas opciones-->
+            <label for="leng">Lenguajes:</label>
+            <select id="leng" name="leng">
+                <option value="0">Seleccione una opción</option>
+                <option value="1">HTML</option> <!--value=html o 1-->
+                <option value="2">JavaScript</option>
+                <option value="3">CSS</option>
+                <option value="4">Python</option>
+                <option value="5">Java</option>
+            </select>
+            <br>
+            <!--cuadro de texto-->
+            <label for="descripcion">Descripción:</label>
+            <br>
+            <textarea id="descripcion" name="descripcion" cols="30" rows="10"></textarea>
+            <br>
+            <!--boton-->
+            <input type="button" value="Enviar">
+            <!--boton submit, envio del formulario-->
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br>
+        <!--mensaje o comentario-->
+        <!--Títulos en HTML-->
+        <h1>Título h1</h1>
+        <h2>Título h2</h2>
+        <h3>Título h3</h3>
+        <h4>Título h4</h4>
+        <h5>Título h5</h5>
+        <h6>Título h6</h6>
+
+        <!--salto de línea-->
+        <br>
+
+        <!--línea horizontal-->
+        <hr>
+
+        <!--párrafos-->
+        <h4>Párrafos</h4>
+        <p>ashdfjskadksajdkadz</p>
+        <hr>
+
+        <!--pre formato-->
+        <h4>Pre formato</h4>
+        <pre>hsdjfds
+            fkdfsfk
+    djfkdz
+        </pre>
+
+        <!--imágenes-->
+        <h4>I love beagles, Momo is the cutest</h4>
+        <img src="IMG/beagle.jpeg" alt="beagle" width="auto" height="200px">
+        <br>
+        <h4>Calico cats are so cute, just like Pantufla</h4>
+        <img src="IMG/calico.jpeg" alt="calico" width="300px" height="auto">
+        <br>
+
+        <!--hipervinculos-->
+        <a href="http://www.sii.cl">Ir al SII</a>
+        <br>
+        <a href="http://www.cnn.com" target="_blank">Ir a CNN en otra pestaña</a>
+        <br>
+
+        <!--hipervinculo con imagen-->
+        <a href="http://codingdojo.com" target="_blank">
+            <img src="IMG/codingdojo.png" alt="coding dojo">
+        </a>
+
+        <!--lista numerada OL-->
+        <h4>Lista numerada</h4>
+        <ol>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <br>
+
+        <!--lista no numerada UL-->
+        <h4>Lista no numerada</h4>
+        <ul>
+            <li>Elemento a</li>
+            <li>Elemento b</li>
+            <li>Elemento c</li>
+            <ul>
+                <li>Elemento d</li>
+                <li>Elemento e</li>
+                <ul>
+                    <li>Elemento f</li>
+                    <ul>
+                        <li>Elemento g</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <br>
+
+        <!--tablas-->
+        <h4>Tablas</h4>
+        <table>
+            <!--titulos de la tabla-->
+            <thead>
+                <!--fila-->
+                <tr>
+                    <!--titulos-->
+                    <th>#</th>
+                    <th>Nombre completo</th>
+                    <th>Apellido paterno</th>
+                    <th>Apellido materno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--fila-->
+                <tr>
+                    <!--columna-->
+                    <td>1</td>
+                    <td>Sofía Magdalena</td>
+                    <td>González</td>
+                    <td>Reyes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ana María</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>Soto</td>
+                    <td>Díaz</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
