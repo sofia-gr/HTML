@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*3 formas de agregar estilo*/
+        /*por elemento(etiqueta)*/
+        
+        p {
+            color: aquamarine;
+            font-size: 30px;
+        }
+        
+        table {
+            width: 50%;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            background-color: burlywood;
+        }
+        /*por clase (.)*/
+        
+        .colores {
+            color: darkseagreen;
+        }
+        /*por id (#), solo un elemento*/
+        
+        #p3 {
+            color: forestgreen;
+        }
+        
+        #fondo {
+            background: fixed;
+            background-color: lemonchiffon;
+            background-image: url("IMG/fondo.jpeg");
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fondo">
+        <h2 class="colores">Esto es un título</h2>
+        <p>Esto es un párrafo</p>
+        <p class="colores">Esto es un párrafo 2</p>
+        <p id="p3">Esto es un párrafo 3</p>
+        <br>
+        <table>
+            <thead>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+            </thead>
+            <tbody>
+                <td>info</td>
+                <td>info</td>
+                <td>info</td>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
